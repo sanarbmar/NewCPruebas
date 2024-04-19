@@ -1,0 +1,122 @@
+/*---------------------------------------------"
+// Template Name: trimStyle
+// Template URL: https://uiparadox.co.uk/teamplates/trimStyles/
+// Description: Barber trimStyle Saloon
+// Version: 1.0.0
+
+===============================================   
+STYLE SHEET INDEXING
+|
+|___ Fonts
+|___ Variables
+|___ Reset Styles
+|___ Responsive
+|___ Spacing
+|___ Helper Classes
+|___ Buttons
+|___ Headings
+|___ Layout Styles
+|___ END STYLE SHEET INDEXING
+
+--------------------------------------------*/
+
+/*-------------------------
+    Fonts
+-------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;600;700;800&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+/*-------------------------
+    Variables
+-------------------------*/
+$accent-1: #E96E1D;
+$gradient: linear-gradient(335.9deg, #38000C -45.32%, #D11B41 61.98%, #2B0009 162.78%);
+$font-primary: 'Montserrat', sans-serif;
+$font-sec: 'Exo', sans-serif;
+$font-awesome: "Font Awesome 5 Pro";
+$transition: all 0.5s ease-in-out;
+$black: #2C2D2F;
+$black-1: #1B1C1E;
+$black-2: #0D0D0D;
+$white: #FAFAFA;
+$gray-1: #F0F2F4;
+$gray-2: #D6D8DB;
+$gray-3: #AFB1B6;
+$gray-4: #797D86;
+$font-137: clamp(90px, 7.135vw, 180px);
+$font-105: clamp(80px, 5.469vw, 140px);
+$font-80: clamp(60px, 4.167vw, 135px);
+$font-61: clamp(43px, 3.177vw, 80px);
+$font-47: clamp(34px, 2.446vw, 60px);
+$font-36: clamp(28px, 1.875vw, 46px);
+$font-27: clamp(20px, 1.406vw, 32px);
+$font-21: clamp(16px, 1.094vw, 24px);
+$font-16: clamp(14px, 0.833vw, 22px);
+$font-12: clamp(8px, 0.625vw, 15px);
+
+.img{
+  background: url(../media/bg/inner-bg.png);
+}
+/*-------------------------
+    Responsive
+-------------------------*/
+@import "helpers/mixins";
+
+/*-------------------------
+    Reset Styles
+-------------------------*/
+@import "basic/basic";
+ 
+/*-------------------------
+    Spacing
+-------------------------*/
+@import "helpers/spacing";
+
+/*-------------------------
+    Helper Classes
+-------------------------*/
+@import "helpers/classes";
+
+/*-------------------------
+  Buttons
+-------------------------*/
+@import "elements/buttons";
+
+
+/*-------------------------
+  Headings
+-------------------------*/
+@import "elements/heading";
+
+/*-------------------------
+  Preloader Styles
+-------------------------*/
+@import "layout/preloader";
+
+@import "layout/header";
+
+@import "layout/footer";
+
+@import "layout/banner";
+
+@import "layout/inner-banner";
+
+@import "layout/about";
+
+@import "layout/pricing";
+
+@import "layout/service";
+
+@import "layout/milestone";
+
+@import "layout/team";
+
+@import "layout/appoinment";
+
+@import "layout/feedback";
+
+@import "layout/contact";
+
+
+
+
+

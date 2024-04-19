@@ -1,0 +1,40 @@
+.footer{
+    background: $black-2;
+    padding: 100px 0 32px;
+    text-align: center;
+    span{
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 140%;
+        color: #FAFAFA;
+        margin-bottom: 64px;
+    }
+    .footer-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 48px;
+        @include media-query(490px) { 
+            flex-wrap: wrap;
+        }
+        li{
+            @include media-query(490px) { 
+                width: 50%;
+                margin-bottom: 16px;
+            }
+            a{
+                font-weight: 400;
+                font-size: 21px;
+                line-height: 140%;
+                color: $gray-3;
+                margin: 0 16px;
+
+                &.active,
+                &:hover{
+                    transition: $transition;
+                    color: $accent-1;
+                }
+            }
+        }
+    }
+}

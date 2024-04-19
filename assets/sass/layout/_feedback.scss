@@ -1,0 +1,71 @@
+.feedback{
+
+    .customer-feed{
+        padding: clamp(16px, 1.25vw, 32px);
+        position: relative;
+        img{
+            position: absolute;
+        }
+        .content{
+            padding: 24px clamp(32px, 2.917vw, 90px);
+            background: $black-1;
+            p{
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                        line-clamp: 3; 
+                -webkit-box-orient: vertical;
+            }
+        }
+        .costumer-logo{
+            left: 0;
+            top: 0;
+            width: clamp(40px, 3.542vw, 90px);
+        }
+        .quite-icon{
+            bottom: 0;
+            right: 0;
+            width: clamp(40px, 3.542vw, 90px);
+        }
+    }
+}
+.instagram-feed{
+    .img-block{
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        width: 33%;
+        @include media-query(768px) { 
+            width: 50%;
+        }
+        @include media-query(340px) { 
+            width: 100%;
+        }
+        .content{
+            position: absolute;
+            transition: $transition;
+            left: 00px;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+            padding: 24px;
+            display: grid;
+            place-content: center;
+            opacity: 0;
+            a{
+                &:hover{
+                    svg{
+                        stroke: $accent-1;
+                    }
+                }
+            }
+        }
+        &:hover{
+            .content{
+                opacity: 1;
+                transition: $transition;
+            }
+        }
+    }
+}

@@ -1,0 +1,338 @@
+.color-primary{
+    color:$accent-1;
+}
+.bg-white{
+    background-color: $white !important;
+}
+.bg-primary{
+    background-color:$accent-1 !important;
+}
+.color-dark{
+    color:$black;
+}
+.bg-dark{
+    background-color: $black !important;
+}
+.color-dark-2{
+    color:$black-1;
+}
+.bg-dark-2{
+    background-color:$black-1;
+}
+.color-dark-3{
+    color:$black-2;
+}
+.bg-dark-3{
+    background-color:$black-2;
+}
+.color-white{
+    color:$white; 
+}
+.color-gray{
+    color:$gray-1;
+}
+.bg-gray{
+    background-color: $gray-1;
+}
+.color-gray-2{
+    color:$gray-2;
+}
+.bg-gray-2{
+    background-color:$gray-2;
+}
+.color-gray-3{
+    color:$gray-3;
+}
+.bg-gray-3{
+    background-color:$gray-3;
+}
+.color-gray-4{
+    color:$gray-4;
+}
+.bg-gray-4{
+    background-color:$gray-4;
+}
+
+.primary-hover{
+    &:hover{
+        color: $black-1;
+    }
+}
+.secondery-hover{
+    &:hover{
+        color: $white;
+    }
+}
+
+.fs-137{
+    font-size:$font-137;
+    @include media-query(1200px) {
+        font-size: 128px;
+    }
+    @include media-query(768px) {
+        font-size: 98px;
+    }
+    @include media-query(768px) {
+        font-size: 72px;
+    }
+    @include media-query(490px) {
+        font-size: 48px;
+    }
+}
+.fs-105{
+    font-size:$font-105;
+    @include media-query(1200px) {
+        font-size: 72px;
+    }
+    @include media-query(992px) {
+        font-size: 58px;
+    }
+    @include media-query(768px) {
+        font-size: 49px;
+    }
+    @include media-query(490px) {
+        font-size: 38px;
+    }
+}
+.fs-80{
+    font-size:$font-80;
+    @media(max-width: 1199px) {
+        font-size: clamp(48px, 5.273vw, 64px);
+    }
+    @media(max-width: 991px) {
+        font-size: clamp(38px, 5.488vw, 54px);
+    }
+    @media(max-width: 767px) {
+        font-size: clamp(34px, 6.25vw, 48px);
+    }
+    @media(max-width: 575px) {
+        font-size: clamp(28px, 7.556vw, 42px);
+    }
+}
+.fs-61{
+    font-size:$font-61;
+    @media(max-width: 1199px) {
+        font-size: clamp(35px, 4.837vw, 50px);
+    }
+    @media(max-width: 991px) {
+        font-size: clamp(30px, 5.556vw, 40px);
+    }
+    @media(max-width: 767px) {
+        font-size: clamp(28px, 6.462vw, 35px);
+    }
+    @media(max-width: 575px) {
+        font-size: clamp(24px, 9vw, 32px);
+    }
+}
+
+.fs-47{
+    font-size:$font-47;
+    @media(max-width: 1199px) {
+        font-size: clamp(32px, 4.199vw, 40px);
+    }
+    @media(max-width: 991px) {
+        font-size: clamp(27px, 4.471vw, 35px);
+    }
+    @media(max-width: 767px) {
+        font-size: clamp(24px, 5.231vw, 30px);
+    }
+    @media(max-width: 575px) {
+        font-size: clamp(21px, 6.75vw, 28px);
+    }
+}
+
+.fs-36{
+    font-size:$font-36;
+    @media(max-width: 1199px) {
+      font-size: clamp(27px, 3.225vw, 36px);
+    }
+    @media(max-width: 991px) {
+        font-size: clamp(24px, 3.493vw, 28px);
+    }
+    @media(max-width: 767px) {
+        font-size: clamp(22px, 4.23vw, 24px);
+    }
+    @media(max-width: 575px) {
+        font-size: clamp(20px, 6.575vw, 22px);
+    }
+}
+.fs-27{
+    font-size:$font-27;
+    @media(max-width: 1199px) {
+      font-size: clamp(22px, 2.539vw, 24px);
+    }
+    @media(max-width: 991px) {
+        font-size: clamp(20px, 2.738vw, 22px);
+    }
+    @media(max-width: 767px) {
+        font-size: clamp(19px, 3.438vw, 23px);
+    }
+    @media(max-width: 575px) {
+        font-size: clamp(16px, 5.25vw, 18px);
+    } 
+}
+.fs-21{
+    font-size:$font-21;
+    @media(max-width: 1199px) {
+        font-size: clamp(15.5px, 2.051vw, 17px);
+    }
+    @media(max-width: 991px) {
+        font-size: clamp(15px, 2.381vw, 16px);
+    }
+    @media(max-width: 767px) {
+        font-size: clamp(14.5px, 2.969vw, 16px);
+        letter-spacing: 0.2px;
+    }
+    @media(max-width: 575px) {
+        font-size: clamp(14px, 4.325vw, 15px);
+    } 
+}
+
+.fs-16{
+    font-size:$font-16;
+    @media(max-width: 1199px) {
+        font-size: clamp(14px, 1.563vw, 18px);
+    }
+    @media(max-width: 991px) {
+        font-size: clamp(13.5px, 1.778vw, 16px);
+    }
+    @media(max-width: 767px) {
+        font-size: clamp(13px, 2.286vw, 14px);
+    }
+    @media(max-width: 575px) {
+        font-size: clamp(11px, 3.59vw, 14px);
+    }  
+}
+.fs-12{
+    font-size: clamp(8px, 0.625vw, 15px);
+}
+
+.fw-3{
+    font-weight: 300;
+}
+.fw-4{
+    font-weight: 400;
+}
+.fw-5{
+    font-weight: 500;
+}
+.fw-6{
+    font-weight: 600;
+}
+.fw-7{
+    font-weight: 700;
+}
+.lh-100{
+    line-height:100%;
+}
+.lh-110{
+    line-height: 110%;
+}
+.lh-120{
+    line-height: 120%;
+}
+.lh-130{
+    line-height: 130%;
+}
+.lh-140{
+    line-height: 140%;
+}
+.lh-150{
+    line-height: 150%;
+}
+.lh-160{
+    line-height: 160%;
+}
+.lh-180{
+    line-height: 180%;
+}
+.ls-1{
+    letter-spacing: -0.01em;
+}
+.ls-0{
+    letter-spacing: -0.00em;
+}
+.ls-2{
+    letter-spacing: -0.02em;
+}
+.ls-3{
+    letter-spacing: -0.03em;
+}
+.ls-4{
+    letter-spacing: -0.04em;
+}
+.hover-animation{
+    transition: $transition;
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
+.transition{
+    transition: $transition;
+}
+.w-150{
+    width: 150px;
+    @include media-query(768px) {
+        width: 100%;
+    }
+
+}
+.h-220{
+    height: 220px;
+}
+.mt-30-m{
+    @include media-query(900px) {
+       margin-top: 30px;
+     }
+}
+.mt-30-sm{
+    @include media-query(490px) {
+       margin-top: 30px;
+    }
+}
+.br-25{
+    border-radius: 25px;
+}
+.br-15{
+    border-radius: 15px;
+}
+.border-bottom{
+    border-bottom: 2px solid $gray-3!important;
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(20px, 1.66vw, 48px);
+    li{
+        a{
+            i{
+                font-size: clamp(24px, 1.66vw, 48px);
+                color: $gray-3;
+            }
+            &:hover{
+                i{
+                    color: $accent-1;
+                }
+                svg{
+                    stroke: $accent-1;
+                    fill: $accent-1;
+                }
+            }
+        }
+    }
+}
+.border-white{
+    border: 1px solid $white;
+}
+.font-sec{
+    font-family: $font-sec;
+}
+.radius-10{
+    border-radius: 10px;
+}
+.color-hover{
+    &:hover{
+        color: $accent-1;
+    }
+}

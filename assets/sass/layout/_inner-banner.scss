@@ -1,0 +1,50 @@
+.inner-banner{
+    background: url(../media/bg/inner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: clamp(350px, 26.042vw, 650px);
+    display: grid;
+    align-content: center;
+    padding-top: 5%;
+    .breadcrumb{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            position: relative;
+            padding: 0 16px;
+            a{
+                font-weight: 400;
+                font-size: 21px;
+                line-height: 140%;
+                text-align: center;
+                color: $gray-3;
+                &.active{
+                    font-weight: 700;
+                    color: $accent-1;
+                    transition: $transition;
+                }
+                &:hover{
+                    color: $accent-1;
+                    transition: $transition;
+                }
+            }
+            &::before{
+                content: '/';
+                position: absolute;
+                right: -4px;
+                top: 2px;
+                font-weight: 400;
+                font-size: 21px;
+                line-height: 140%;
+                color: $gray-3;
+            }
+            &:last-child{
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+}
